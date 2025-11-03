@@ -1,3 +1,5 @@
+//积分排名页面(教师端)
+
 import 'package:flutter/material.dart';
 import 'student_score_detail_page.dart'; 
 

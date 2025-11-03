@@ -1,3 +1,5 @@
+// 学生积分详情页面(教师端)
+
 import 'package:flutter/material.dart';
 
 class StudentScoreDetailPage extends StatelessWidget {

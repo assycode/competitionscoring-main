@@ -1,3 +1,5 @@
+// 用户注册页面(主页面)
+
 import 'package:flutter/material.dart';
 
 class UserRegisterPage extends StatefulWidget {

@@ -1,3 +1,5 @@
+// 积分明细页面(学生端)
+
 import 'package:flutter/material.dart';
 import 'appeal_dialog.dart'; 
 

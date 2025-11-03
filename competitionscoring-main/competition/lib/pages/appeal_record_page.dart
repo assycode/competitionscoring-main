@@ -1,3 +1,5 @@
+// 申诉记录页面(学生端)
+
 import 'package:flutter/material.dart';
 
 class AppealRecordPage extends StatefulWidget {

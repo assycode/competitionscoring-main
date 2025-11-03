@@ -1,3 +1,5 @@
+// 个人主页页面(管理员端)
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -39,9 +41,17 @@ class _AdminHomePageState extends State<AdminHomePage> {
           ),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 20),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+            size: 20,
+          ),
           onPressed: () {
-            Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
+            Navigator.pushNamedAndRemoveUntil(
+              context,
+              '/login',
+              (route) => false,
+            );
           },
         ),
       ),
@@ -63,7 +73,11 @@ class _AdminHomePageState extends State<AdminHomePage> {
                   CircleAvatar(
                     radius: 36,
                     backgroundColor: primaryBlue.withOpacity(0.1),
-                    child: const Icon(Icons.person_rounded, color: Colors.black54, size: 44),
+                    child: const Icon(
+                      Icons.person_rounded,
+                      color: Colors.black54,
+                      size: 44,
+                    ),
                   ),
                   const SizedBox(height: 10),
                   const Text(
@@ -80,13 +94,37 @@ class _AdminHomePageState extends State<AdminHomePage> {
             ),
             const SizedBox(height: 26),
 
-            
-
             // 四个功能模块
-            _buildFlatCard(Icons.school_rounded, primaryBlue, '学院信息管理', () {}),
-            _buildFlatCard(Icons.people_alt_rounded, Colors.green, '用户信息管理', () {}),
-            _buildFlatCard(Icons.emoji_events_rounded, Colors.orange, '奖项认定信息管理', () {}),
-            _buildFlatCard(Icons.rule_rounded, Colors.redAccent, '积分权重规则管理', () {}),
+
+            // 学院信息管理跳转
+            _buildFlatCard(Icons.school_rounded, primaryBlue, '学院信息管理', () {
+              Navigator.pushReplacementNamed(context, '/adminCollegeInfo');
+            }),
+
+            // 用户信息管理跳转
+
+            _buildFlatCard(
+              Icons.people_alt_rounded,
+              Colors.green,
+              '用户信息管理',
+              () {},
+            ),
+
+            // 竞赛信息管理跳转
+            _buildFlatCard(
+              Icons.emoji_events_rounded,
+              Colors.orange,
+              '奖项认定信息管理',
+              () {},
+            ),
+
+            // 积分权重规则管理跳转
+            _buildFlatCard(
+              Icons.rule_rounded,
+              Colors.redAccent,
+              '积分权重规则管理',
+              () {},
+            ),
 
             const SizedBox(height: 26),
 
@@ -132,7 +170,11 @@ class _AdminHomePageState extends State<AdminHomePage> {
                 ),
               ),
             ),
-            const Icon(Icons.chevron_right_rounded, color: Colors.grey, size: 20),
+            const Icon(
+              Icons.chevron_right_rounded,
+              color: Colors.grey,
+              size: 20,
+            ),
           ],
         ),
       ),

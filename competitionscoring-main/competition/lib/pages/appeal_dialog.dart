@@ -1,3 +1,5 @@
+// 申诉对话框
+
 import 'package:flutter/material.dart';
 
 class AppealDialog extends StatelessWidget {
