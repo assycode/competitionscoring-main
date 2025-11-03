@@ -3,6 +3,7 @@ import 'package:competition/pages/student_home_page.dart';
 import 'package:competition/pages/teacher_home_page.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
+import 'pages/admin_home_page.dart';
 
 void main() => runApp(const ScoreSystemApp());
 
@@ -22,8 +23,9 @@ class ScoreSystemApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/teacherHome': (context) => const TeacherHomePage(),
         '/studentHome': (context) => const StudentHomePage(),
+        '/adminHome': (context) => const AdminHomePage(),
         '/forgotPassword': (context) => const ForgotPasswordPage(),
-
+        
       },
     );
   }
