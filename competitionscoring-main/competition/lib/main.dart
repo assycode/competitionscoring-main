@@ -1,5 +1,6 @@
 import 'package:competition/pages/admin_college_info.dart';
 import 'package:competition/pages/admin_score_rules.dart';
+import 'package:competition/pages/admin_user_info_management_page.dart';
 import 'package:competition/pages/forgot_password_page.dart';
 import 'package:competition/pages/student_home_page.dart';
 import 'package:competition/pages/teacher_home_page.dart';
@@ -31,6 +32,7 @@ class ScoreSystemApp extends StatelessWidget {
         '/adminHome': (context) => const AdminHomePage(),
         '/adminCollegeInfo': (context) => const CollegeInfoPage(),
         '/adminScoreRules': (context) => const ScoreRulesPage(),
+        '/adminUserInfoManagement': (context) => const AdminUserInfoManagementPage(),
       },
     );
   }

@@ -107,7 +107,9 @@ class _AdminHomePageState extends State<AdminHomePage> {
               Icons.people_alt_rounded,
               Colors.green,
               '用户信息管理',
-              () {},
+              () {
+                Navigator.pushReplacementNamed(context, '/adminUserInfoManagement');
+              },
             ),
 
             // 竞赛信息管理跳转
